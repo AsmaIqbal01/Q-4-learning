@@ -34,6 +34,3 @@ Response: Contains user_id, reply, and metadata.
 License
 This project is licensed under the MIT License.
 
-Run
-
-undefined
