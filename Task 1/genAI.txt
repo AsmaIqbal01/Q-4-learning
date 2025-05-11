@@ -28,6 +28,8 @@ Think:
 🧠 Popular Types of Generative Models
 Kinds of GenAI, huh? You’ve probably run into a few already:
 
+link to medium blog:https://medium.com/@azeecreations1/what-is-generative-ai-2bdebd48a8c0
+
 GPT — Yeah, the kind of stuff you’re reading right now. Conversations, stories, essays. That’s its wheelhouse.
 GANs — Like rival artists in a bizarre paint-off, each trying to outdo the other with mind-blowing images.
 Diffusion Models — Feed them a prompt like “Give me a cat DJ-ing at a rave” and — boom — visual magic.
