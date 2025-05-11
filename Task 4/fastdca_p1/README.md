@@ -19,7 +19,7 @@ Sent as key-value pairs after ? in the URL.
 Can be optional or required and support validation.
 Use Query for extra validation and metadata.
 - Example:
-  ```python
+ 
 @app.get("/items/")
 async def read_items(q: str | None = Query(None, min_length=3, max_length=50)):
 ...
@@ -27,7 +27,6 @@ async def read_items(q: str | None = Query(None, min_length=3, max_length=50)):
 Contain JSON or other structured data sent in the body of the request.
 Defined using Pydantic models for validation and serialization.
 - Example:
-  ```python
 class Item(BaseModel):
 name: str
 ...
@@ -35,14 +34,12 @@ name: str
 Extracted from HTTP request headers.
 Defined using the Header dependency.
 - Example:
-  ```python
 from fastapi import Header
 ...
 ### 5. Cookie Parameters
 Extracted from HTTP cookies sent with the request.
 Defined using the Cookie dependency.
 - Example:
-  ```python
 from fastapi import Cookie
 ...
 ### Validation and Metadata
@@ -51,7 +48,6 @@ FastAPI allows adding validation rules and metadata to parameters for improved d
 Validation examples: minimum/maximum values, string length, regex patterns.
 Metadata: titles, descriptions, and examples for API docs.
 - Example:
-  ```python
 from fastapi import FastAPI, Query
 ...
 ### Automatic API Documentation
