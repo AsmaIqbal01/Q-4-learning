@@ -18,39 +18,31 @@ FastAPI supports multiple parameter types to handle incoming request data effici
 Sent as key-value pairs after ? in the URL.
 Can be optional or required and support validation.
 Use Query for extra validation and metadata.
-Example:
-python
-3 lines
-Click to expand
+- Example:
+  ```python
 @app.get("/items/")
 async def read_items(q: str | None = Query(None, min_length=3, max_length=50)):
 ...
 ### 3. Request Body Parameters
 Contain JSON or other structured data sent in the body of the request.
 Defined using Pydantic models for validation and serialization.
-Example:
-python
-8 lines
-Click to expand
+- Example:
+  ```python
 class Item(BaseModel):
 name: str
 ...
 ### 4. Header Parameters
 Extracted from HTTP request headers.
 Defined using the Header dependency.
-Example:
-python
-5 lines
-Click to expand
+- Example:
+  ```python
 from fastapi import Header
 ...
 ### 5. Cookie Parameters
 Extracted from HTTP cookies sent with the request.
 Defined using the Cookie dependency.
-Example:
-python
-5 lines
-Click to expand
+- Example:
+  ```python
 from fastapi import Cookie
 ...
 ### Validation and Metadata
@@ -58,10 +50,8 @@ FastAPI allows adding validation rules and metadata to parameters for improved d
 
 Validation examples: minimum/maximum values, string length, regex patterns.
 Metadata: titles, descriptions, and examples for API docs.
-Example with validation and metadata:
-python
-15 lines
-Click to expand
+- Example:
+  ```python
 from fastapi import FastAPI, Query
 ...
 ### Automatic API Documentation
