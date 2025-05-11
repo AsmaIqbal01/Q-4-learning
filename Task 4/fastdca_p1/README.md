@@ -72,9 +72,9 @@ ReDoc: Accessible at /redoc for structured API documentation.
 Enhancing Documentation
 You can enhance docs by:
 
-Adding descriptions and examples to parameters.
+##Adding descriptions and examples to parameters.
 Using Enums to restrict values.
 Grouping related parameters for clarity.
-Summary
+##Summary
 Understanding and effectively using FastAPI’s parameter types and validation features enables you to build robust, well-documented APIs effortlessly.
 
