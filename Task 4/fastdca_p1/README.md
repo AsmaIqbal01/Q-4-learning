@@ -14,7 +14,7 @@ FastAPI supports multiple parameter types to handle incoming request data effici
   @app.get("/items/{item_id}")
   async def read_item(item_id: int):
       return {"item_id": item_id}
-2. Query Parameters
+### 2. Query Parameters
 Sent as key-value pairs after ? in the URL.
 Can be optional or required and support validation.
 Use Query for extra validation and metadata.
@@ -25,7 +25,7 @@ Click to expand
 @app.get("/items/")
 async def read_items(q: str | None = Query(None, min_length=3, max_length=50)):
 ...
-3. Request Body Parameters
+### 3. Request Body Parameters
 Contain JSON or other structured data sent in the body of the request.
 Defined using Pydantic models for validation and serialization.
 Example:
@@ -35,7 +35,7 @@ Click to expand
 class Item(BaseModel):
 name: str
 ...
-4. Header Parameters
+### 4. Header Parameters
 Extracted from HTTP request headers.
 Defined using the Header dependency.
 Example:
@@ -44,7 +44,7 @@ python
 Click to expand
 from fastapi import Header
 ...
-5. Cookie Parameters
+### 5. Cookie Parameters
 Extracted from HTTP cookies sent with the request.
 Defined using the Cookie dependency.
 Example:
@@ -53,7 +53,7 @@ python
 Click to expand
 from fastapi import Cookie
 ...
-Validation and Metadata
+### Validation and Metadata
 FastAPI allows adding validation rules and metadata to parameters for improved data integrity and documentation:
 
 Validation examples: minimum/maximum values, string length, regex patterns.
@@ -64,7 +64,7 @@ python
 Click to expand
 from fastapi import FastAPI, Query
 ...
-Automatic API Documentation
+### Automatic API Documentation
 FastAPI automatically generates interactive API docs using OpenAPI standards:
 
 Swagger UI: Accessible at /docs for interactive API testing.
@@ -72,10 +72,10 @@ ReDoc: Accessible at /redoc for structured API documentation.
 Enhancing Documentation
 You can enhance docs by:
 
-###Adding descriptions and examples to parameters.
+### Adding descriptions and examples to parameters.
 Using Enums to restrict values.
 Grouping related parameters for clarity.
 
-###Summary
+### Summary
 Understanding and effectively using FastAPI’s parameter types and validation features enables you to build robust, well-documented APIs effortlessly.
 
