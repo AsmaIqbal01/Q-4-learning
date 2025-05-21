@@ -71,4 +71,7 @@ If you’re excited about building AI agents that act, decide, and collaborate, 
 Want to explore it yourself? Check out the official repo:
 🔗 OpenAI Agents SDK GitHub Repository
 
+You can read on my medium blog as well...
+https://medium.com/@azeecreations1/python-ai-and-the-power-of-simplicity-exploring-the-openai-agents-sdk-2013f5d528a8
+
 Let’s build the future of AI — one clean, Pythonic agent at a time. 🚀
