@@ -95,12 +95,6 @@ Large Language Models have **revolutionized** how machines understand and intera
 
 ---
 
-## 🙌 Acknowledgment
-
-Special thanks to mentors and leaders:  
-**Asharib Ali, Muhammad Hamza Ali, Mubashir Ali, Ameen Alam, Ali Jawwad, Amjad Ali, Naeem H., Nida Rizwan, Abdullah Arain, Syeda Hafsa, Shaikh Abdul Sami, Daniyal Nagori, Zia Khan, and Kamran Tessori** for creating this learning ecosystem.
-
----
 
 📅 *Published on Medium: [link-to-post]*  
 🔗 *GitHub Repo: [Your GitHub Repository URL]*
